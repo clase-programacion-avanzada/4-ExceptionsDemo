@@ -46,7 +46,7 @@ public class BankDemo {
         } catch (NullPointerException e) {
             // Handle the NullPointerException and print a message
             System.out.println("You have a null pointer exception");
-            e.printStackTrace();
+            System.out.println(e.getMessage());
 
         } catch (InsufficientFundsException e) { // This catch is mandatory
             throw new RuntimeException(e);
