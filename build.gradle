@@ -17,3 +17,33 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+task runArithmethicExceptionExample(type: JavaExec) {
+    standardInput = System.in
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.company.ArithmeticExceptionExample'
+}
+
+task runArithmethicExceptionFixed(type: JavaExec) {
+    standardInput = System.in
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.company.ArithmeticExceptionFixed'
+}
+
+task runBankDemo(type: JavaExec) {
+    standardInput = System.in
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.company.BankDemo'
+}
+
+task runErrorExample(type: JavaExec) {
+    standardInput = System.in
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.company.ErrorExample'
+}
+
+task runTryWithResources(type: JavaExec) {
+    standardInput = System.in
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.company.TryWithResources'
+}
